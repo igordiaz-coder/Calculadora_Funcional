@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Multifuncional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculadora">
+
+        <h1>Calculadora Multifuncional</h1>
+
+        <label>Número 1</label>
+        <input type="text" inputmode="decimal" id="numero1" placeholder="0" onfocus="definirCampoAtivo(this)">
+
+        <label>Número 2</label>
+        <input type="text" inputmode="decimal" id="numero2" placeholder="0" onfocus="definirCampoAtivo(this)">
+
+        <div class="botoes">
+            <button onclick="somar()">Somar</button>
+            <button onclick="subtrair()">Subtrair</button>
+            <button onclick="dividir()">Dividir</button>
+            <button onclick="multiplicar()">Multiplicar</button>
+        </div>
+
+        <div class="botoes botoes-extra">
+            <button class="btn-extra" onclick="limparTudo()">CE</button>
+            <button class="btn-extra" onclick="porcentagem()">%</button>
+            <button class="btn-extra" onclick="adicionarVirgula()">,</button>
+        </div>
+
+        <h2 id="resultado">
+            Resultado:
+        </h2>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
